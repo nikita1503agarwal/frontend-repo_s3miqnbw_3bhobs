@@ -1,4 +1,4 @@
-import { MessageCircle, MapPin, Phone, WhatsappLogoIcon } from 'lucide-react'
+import { MessageCircle, MapPin, Phone } from 'lucide-react'
 
 export default function ContactSupport(){
   return (
@@ -10,24 +10,26 @@ export default function ContactSupport(){
             <p className="text-white/60 mt-2">We are here 24/7 on WhatsApp and live chat.</p>
 
             <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <a href="https://wa.me/966500000000" target="_blank" className="rounded-2xl p-5 bg-emerald-600/20 text-emerald-200 ring-1 ring-emerald-500/30 hover:bg-emerald-600/30 transition">
-                <div className="font-semibold">WhatsApp</div>
+              <a href="https://wa.me/966500000000" target="_blank" rel="noreferrer" className="rounded-2xl p-5 bg-emerald-600/20 text-emerald-200 ring-1 ring-emerald-500/30 hover:bg-emerald-600/30 transition">
+                <div className="flex items-center gap-2 font-semibold"><MessageCircle size={18} /> WhatsApp</div>
                 <div className="text-sm opacity-80">Tap to chat with us</div>
               </a>
               <button className="rounded-2xl p-5 bg-white/5 text-white ring-1 ring-white/10 hover:bg-white/10 transition">
-                <div className="font-semibold">Live Chat</div>
+                <div className="flex items-center gap-2 font-semibold"><MessageCircle size={18} /> Live Chat</div>
                 <div className="text-sm opacity-70">Start a conversation</div>
               </button>
             </div>
 
             <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="rounded-2xl p-5 bg-white/5 ring-1 ring-white/10">
-                <div className="font-semibold text-white">Riyadh</div>
+                <div className="flex items-center gap-2 font-semibold text-white"><MapPin size={16} /> Riyadh</div>
                 <div className="text-sm text-white/60">King Fahd Rd, Olaya</div>
+                <div className="mt-2 text-sm text-white/70 inline-flex items-center gap-2"><Phone size={14} /> 011-000-0000</div>
               </div>
               <div className="rounded-2xl p-5 bg-white/5 ring-1 ring-white/10">
-                <div className="font-semibold text-white">Jeddah</div>
+                <div className="flex items-center gap-2 font-semibold text-white"><MapPin size={16} /> Jeddah</div>
                 <div className="text-sm text-white/60">Al Andalus, Prince Mohammed Bin Abdulaziz St</div>
+                <div className="mt-2 text-sm text-white/70 inline-flex items-center gap-2"><Phone size={14} /> 012-000-0000</div>
               </div>
             </div>
           </div>
